@@ -5,7 +5,7 @@
 read -p "Enter a number: " N
 num=1
 start=1
-for (( num=$start;  num<=$N; c++ ))
+for (( num=start;  num<=N; c++ ))
 do
 	if [ $((num%2)) -eq 0 ]
 	then
@@ -13,5 +13,5 @@ do
 	else
 		echo "$num ODD"
 	fi
-	num=$[$num+1]
+	num=$(($num+1))
 done
